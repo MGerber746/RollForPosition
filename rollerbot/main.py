@@ -1,6 +1,7 @@
 import asyncio
 import position_roller as p
 import discord
+import os
 
 client = discord.Client()
 
@@ -50,4 +51,4 @@ async def on_message(message):
 
 
 
-client.run('ODAwNTE1NTQ1MzA4NTk0MjE2.YATQMg.cuKcAGwhbpDzZhexniFDL10QwOc')
+client.run(os.getenv('TOKEN'))
